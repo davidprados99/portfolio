@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* General styles */
 :root {
     font-family: "Segoe UI", Roboto, sans-serif;
     margin: 0;
@@ -28,43 +28,43 @@ header {
     }
 }
 
-/* Sección proyectos */
-.proyectos {
+/* Project's section */
+.projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /*Repite cada columna como mínimo de 300px,
-                                                                si sobra espacio, reparte en todas las columnas por igual (1fr) 
-                                                                y pone tantas columnas como en el ancho disponible (auto-fit)*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /*It repeats each column at least 300px wide.
+                                                                If there's extra space,it distributes equally in all columns (1fr)
+                                                                and it adds as many columns as the available width (auto-fit)*/
     gap: 2rem;
     padding: 3rem;
     margin: 1rem;
 }
 
-/* Carta de proyecto */
-.tarjeta {
+/* Project's card */
+.card {
     background: white;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     overflow: hidden;
     padding: 1rem;
-    height: 100%; /* importante para que todas las cards tengan la misma altura en el grid */
+    height: 100%; /* All the cards must have the same height on the grid*/
 }
 
-.tarjeta:hover {
+.card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.2); /*Doy un efecto de mayor sombreado a los bordes*/
-    transition: all 500ms ease-in-out; /*Transición para cuando pase el ratón por encima*/
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2); /*It gives shadow effect to the radius*/
+    transition: all 500ms ease-in-out; 
     }
 
 
-/* Imagen */
-.img_proyecto img {
+/* Image */
+.project_img img {
     width: 100%;
     height: 200px;
-    object-fit: contain; /* toda la imagen se ve, puede aparecer espacio vacío arriba/abajo */
+    object-fit: contain; /*the entire image is visible, empty space may appear above/below */
 }
 
-/* Contenido */
-.contenido {
+/* Content */
+.content {
     padding: 1.5rem;
     h3 {
         margin: 0 0 0.5rem;
@@ -74,7 +74,7 @@ header {
         font-size: 1em;
         margin-bottom: 1rem;
     }
-    a.boton {
+    a.button {
         font-size: 1rem;
         display: inline-block; 
         padding: 0.6rem 1.2rem;
@@ -87,7 +87,7 @@ header {
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
-    a.boton:hover {
+    a.button:hover {
         background-color: #192a56;
         box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     }
@@ -110,7 +110,7 @@ footer a {
     transition: color 0.3s;
 }
 
-/* efecto subrayado animado */
+/* Animated underline effect */
 footer a::after {
     content: '';
     display: block;

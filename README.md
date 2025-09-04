@@ -1,20 +1,18 @@
-# Mi Portfolio de Programación
+# My Software Development Portfolio
 
-Este es mi portfolio personal donde muestro mis proyectos realizados durante el ciclo superior de Desarrollo de Aplicaciones Multiplataforma junto al certificado de Big Data & IA.
+This is my personal portfolio where I showcase the projects I completed during my Higher Degree in Multiplatform Application Development, along with the Big Data & AI certificate.
 
-**VER ONLINE:** https://davidprados99.github.io/portfolio/
+**LIVE DEMO:** https://davidprados99.github.io/portfolio/
 
 ---
 
-## Tecnologías
+## Technologies
 - HTML5
 - CSS3
-- GitHub Pages (para la publicación)
+- GitHub Pages (for hosting)
 
 ---
 
-## Proyectos incluidos
-- **Calculadora (Java + Swing)** : Proyecto de Programación  
-- **CV online (HTML + CSS)** : Proyecto de Lenguaje de Marcas  
-- **Web de Lucía (HTML, CSS, PHP, MySQL)** : Proyecto intermodular  
-- **Big Data (AWS + Power BI)** : Proyecto de Big Data  
+## Featured Projects
+- **Professional website (HTML, CSS, PHP, MySQL)** : Interdisciplinary project  
+- **Football players injuries analysis (AWS + Power BI)** : Big Data project 
