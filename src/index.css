@@ -1,0 +1,22 @@
+/* Import font of VT323 */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import "tailwindcss";
+
+
+
+/* Configure the theme */
+@theme {
+  /* Define the default font */
+  --font-mono: "VT323", monospace;
+  
+  /* Define a classic phosphor green */
+  --color-phosphor-green: #33ff33;
+}
+
+/* 3. Basic global styles */
+body {
+  @apply bg-black font-mono; /* Black background and mono font by default throughout the web */
+  
+  /* Optional: A slight glow effect on the text */
+  text-shadow: 0 0 5px rgba(51, 255, 51, 0.5);
+}
