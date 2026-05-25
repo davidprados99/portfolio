@@ -8,8 +8,7 @@ import { Education } from './pages/Education';
 import { Projects } from './pages/Projects';
 import { Contact } from './pages/Contact';
 
-// Creamos un componente envoltorio para que la Navbar y el Footer 
-// NO se muestren en la pantalla de inicio (Welcome), pero sí en el resto.
+
 const AppLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const location = useLocation();
   const isWelcomePage = location.pathname === '/';
