@@ -1,36 +1,49 @@
-import React from 'react'
-import {Typewriter} from './components/Typewriter'
+import React from 'react';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { Navbar } from './components/NavBar';
+import { Welcome } from './pages/Welcome';
+import { About } from './pages/About';
+import { Experience } from './pages/Experience';
+import { Education } from './pages/Education';
+import { Projects } from './pages/Projects';
+import { Contact } from './pages/Contact';
+
+// Creamos un componente envoltorio para que la Navbar y el Footer 
+// NO se muestren en la pantalla de inicio (Welcome), pero sí en el resto.
+const AppLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const location = useLocation();
+  const isWelcomePage = location.pathname === '/';
+
+  if (isWelcomePage) return <>{children}</>;
+
+  return (
+    <div className="min-h-screen bg-black text-white font-mono flex flex-col selection:bg-phosphor-green selection:text-black">
+      <Navbar />
+      <main className="flex-1 max-w-5xl w-full mx-auto px-4 py-8">
+        {children}
+      </main>
+      <footer className="border-t border-zinc-900 py-6 text-center text-xs text-zinc-600">
+        sys.status: online // logs: active // © {new Date().getFullYear()} David Prados
+      </footer>
+    </div>
+  );
+};
 
 function App() {
-  const [showSubtitle, setShowSubtitle] = React.useState(false);
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-black text-phosphor-green p-4">
-
-      {/* Title section */}
-      <div className="w-full max-w-4xl">
-        <h1 className="text-4xl md:text-6xl font-normal mb-6 tracking-wider">
-          {/* Add a '>' prefix to simulate a command prompt */}
-          <span>&gt; </span>
-          <Typewriter 
-            text="Te doy la bienvenida a mi portfolio" 
-            speed={100} 
-            onComplete={() => setShowSubtitle(true)} 
-          />
-          {/* The blinking cursor at the end */}
-          <span className="animate-pulse">|</span>
-          {/*wait at the end of the text*/}
-        </h1>
-
-        {/* Subtitle section */}
-        {showSubtitle && (
-          <p className="text-xl md:text-2xl text-phosphor-green/80 leading-relaxed font-light">
-            <Typewriter text="Soy David, programador multiplataforma y estudiante de ingeniería." speed={50} />
-          </p>
-        )}
-      </div>
-
-    </main>
-  )
+    <Router>
+      <AppLayout>
+        <Routes>
+          <Route path="/" element={<Welcome />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </AppLayout>
+    </Router>
+  );
 }
 
-export default App
+export default App;
