@@ -22,7 +22,7 @@ export const Welcome: React.FC = () => {
                     <div className="min-h-16">
                         {showSubtitle && (
                             <p className="text-xl md:text-2xl text-phosphor-green/80 leading-relaxed font-light">
-                                <Typewriter text="Soy David, programador multiplataforma y estudiante de ingeniería." speed={50} />
+                                <Typewriter text="Soy David, programador multiplataforma y estudiante de ingeniería informática." speed={50} />
                             </p>
                         )}
                     </div>
