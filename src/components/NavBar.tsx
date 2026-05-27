@@ -21,6 +21,12 @@ export const Navbar: React.FC = () => {
                         [ SOBRE_MÍ ]
                     </Link>
                     <Link
+                        to="/projects"
+                        className={`px-3 py-1 border transition-colors ${isActive('/projects') ? 'bg-phosphor-green text-black border-phosphor-green' : 'border-transparent text-zinc-400 hover:text-phosphor-green'}`}
+                    >
+                        [ PROYECTOS ]
+                    </Link>
+                    <Link
                         to="/experience"
                         className={`px-3 py-1 border transition-colors ${isActive('/experience') ? 'bg-phosphor-green text-black border-phosphor-green' : 'border-transparent text-zinc-400 hover:text-phosphor-green'}`}
                     >
@@ -31,12 +37,6 @@ export const Navbar: React.FC = () => {
                         className={`px-3 py-1 border transition-colors ${isActive('/education') ? 'bg-phosphor-green text-black border-phosphor-green' : 'border-transparent text-zinc-400 hover:text-phosphor-green'}`}
                     >
                         [ EDUCACIÓN ]
-                    </Link>
-                    <Link
-                        to="/projects"
-                        className={`px-3 py-1 border transition-colors ${isActive('/projects') ? 'bg-phosphor-green text-black border-phosphor-green' : 'border-transparent text-zinc-400 hover:text-phosphor-green'}`}
-                    >
-                        [ PROYECTOS ]
                     </Link>
                     <Link
                         to="/contact"
