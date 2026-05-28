@@ -17,7 +17,7 @@ const projects = [    {
             </>
         ),
         imageSrc: PortfolioImg,
-        technologies: [ 'React', 'TypeScript', 'Tailwind CSS v4', 'Vite', 'GitHub Actions'],
+        technologies: [ 'React', 'TypeScript', 'Tailwind CSS v4', 'Vite', 'GitHub Actions', 'Formspree API '],
         githubUrl: "https://github.com/davidprados99/portfolio",
         demoUrl: "https://davidprados99.github.io/portfolio/",
         status: "COMPLETADO"
