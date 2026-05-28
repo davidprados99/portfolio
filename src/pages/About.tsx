@@ -5,8 +5,11 @@ export const About: React.FC = () => {
     return (
         <div className="w-full animate-fade-in font-mono">
             {/* Title section */}
-            <h1 className="text-3xl md:text-5xl text-phosphor-green font-normal mb-8 tracking-wider border-b border-phosphor-green/30 pb-4">
+            <h1 className="text-3xl md:text-5xl text-phosphor-green font-normal mb-10 tracking-wider border-b border-phosphor-green/30 pb-4 flex items-center gap-4">
                 &gt; Sobre_mí
+                <span className="text-sm border border-phosphor-green/50 px-2 py-1 bg-phosphor-green/10 hidden sm:inline-block animate-pulse">
+                    [ ¡BIENVENIDO A MI PORTFOLIO! ]
+                </span>
             </h1>
 
             {/* Main container: On mobile in reverse column (image above, text below), on PC in row */}
