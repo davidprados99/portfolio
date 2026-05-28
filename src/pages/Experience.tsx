@@ -72,7 +72,7 @@ export const Experience: React.FC = () => {
             {/* Header */}
             <h1 className="text-3xl md:text-5xl text-phosphor-green font-normal mb-10 tracking-wider border-b border-phosphor-green/30 pb-4 flex items-center gap-4">
                 &gt; Mi_Experiencia
-                <span className="text-sm border border-phosphor-green/50 px-2 py-1 bg-phosphor-green/10">
+                <span className="text-sm border border-phosphor-green/50 px-2 py-1 bg-phosphor-green/10 hidden sm:inline-block animate-pulse">
                     [ {experiences.length} REGISTROS ]
                 </span>
             </h1>

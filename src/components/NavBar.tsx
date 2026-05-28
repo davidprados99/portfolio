@@ -33,10 +33,10 @@ export const Navbar: React.FC = () => {
                         [ EXPERIENCIA ]
                     </Link>
                     <Link
-                        to="/education"
-                        className={`px-3 py-1 border transition-colors ${isActive('/education') ? 'bg-phosphor-green text-black border-phosphor-green' : 'border-transparent text-zinc-400 hover:text-phosphor-green'}`}
+                        to="/formation"
+                        className={`px-3 py-1 border transition-colors ${isActive('/formation') ? 'bg-phosphor-green text-black border-phosphor-green' : 'border-transparent text-zinc-400 hover:text-phosphor-green'}`}
                     >
-                        [ EDUCACIÓN ]
+                        [ FORMACIÓN ]
                     </Link>
                     <Link
                         to="/contact"

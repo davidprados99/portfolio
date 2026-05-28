@@ -2,6 +2,8 @@ import React from 'react';
 import { ProjectCard } from '../components/ProjectCard';
 import PortfolioImg from '../assets/portfolio_image.png';
 import rehabLogo from '../assets/logo_Rehab&Move.png';
+import machineLearningImg from '../assets/machine_learning_img.jpg';
+import bigDataImg from '../assets/Big_Data_img.jpg';
 
 
 const projects = [    {
@@ -31,9 +33,39 @@ const projects = [    {
             </>
         ),
         imageSrc: rehabLogo,
-        technologies: [ 'PySide6', 'FastAPI', 'PostgreSQL', 'AWS RDS', 'AWS Elastic Beanstalk'],
+        technologies: [ 'Python', 'FastAPI', 'PySide6', 'Matplotlib', 'TypeScript', 'React', 'Tailwind CSS v4', 'PostgreSQL', 'AWS RDS', 'AWS Elastic Beanstalk', 'Vercel', 'GitHub Actions'],
         githubUrl: "https://github.com/davidprados99/Rehab-Move_Project",
         demoUrl: "https://rehab-move-project.vercel.app/login",
+        status: "COMPLETADO"
+    },
+    {
+        id: 3,
+        title: "Proyecto Machine Learning",
+        date: "Septiembre 2025 - Enero 2026",
+        description: (
+            <>
+                Desarrollo de Machine Learning (Proyecto de Final de Especialización IA) para predecir la probabilidad de padecer dolor lumbar a partir de datos fisiológicos y anatómicos. El proyecto incluye la limpieza y análisis de datos, la implementación de varios modelos de clasificación (Random Forest, Regresión Logística) y la visualización de resultados para identificar los factores más relevantes asociados al dolor lumbar.
+            </>
+        ),
+        imageSrc: machineLearningImg,
+        technologies: [ 'Python', 'Scikit-learn', 'Random Forest', 'Regresión Logística', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn'],
+        githubUrl: "https://github.com/davidprados99/Proyecto_final_IA",
+        demoUrl: "",
+        status: "COMPLETADO"
+    },
+    {
+        id: 4,
+        title: "Proyecto Big Data",
+        date: "Enero 2025 - Junio 2025",
+        description: (
+            <>
+                Este proyecto tiene como objetivo realizar un análisis completo sobre lesiones de futbolistas profesionales entre los años 2019 y 2023 de la Premier League utilizando tecnologías de Big Data en AWS y visualización con Power BI.
+            </>
+        ),
+        imageSrc: bigDataImg,
+        technologies: [ 'AWS S3', 'AWS Athena', 'AWS Glue','AWS EMR con Spark', 'Power BI', 'SQL'],
+        githubUrl: "https://github.com/davidprados99/proyecto_final_BigData",
+        demoUrl: "",
         status: "COMPLETADO"
     },
 
@@ -45,7 +77,7 @@ export const Projects: React.FC = () => {
             {/* Cabecera */}
             <h1 className="text-3xl md:text-5xl text-phosphor-green font-normal mb-10 tracking-wider border-b border-phosphor-green/30 pb-4 flex items-center gap-4">
                 &gt; Mis_Proyectos
-                <span className="text-sm border border-phosphor-green/50 px-2 py-1 bg-phosphor-green/10 hidden sm:inline-block">
+                <span className="text-sm border border-phosphor-green/50 px-2 py-1 bg-phosphor-green/10 hidden sm:inline-block animate-pulse">
                     [ {projects.length} ARCHIVOS ENCONTRADOS ]
                 </span>
             </h1>
