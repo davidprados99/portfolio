@@ -30,7 +30,7 @@ const formationData = [
     },
     {
         id: 3,
-        title: "Especialización en Big Data & IA",
+        title: "Especialización en Big Data & I.A.",
         institution: "Universidad Alfonso X El Sabio",
         date: "Septiembre 2024 - Enero 2026",
         grade: "9,3/10",
