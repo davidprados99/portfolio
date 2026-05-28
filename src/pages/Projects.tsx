@@ -9,7 +9,7 @@ import bigDataImg from '../assets/Big_Data_img.jpg';
 const projects = [    {
         id: 1,
         title: "Terminal Portfolio",
-        date: "Mayo 2026",
+        date: "Abril 2026 - Mayo 2026",
         description: (
             <>
                 Migración y rediseño completo de un portfolio web legacy hacia una arquitectura moderna SPA (Single Page Application). 
@@ -25,7 +25,7 @@ const projects = [    {
     {
         id: 2,
         title: "Rehab & Move",
-        date: "Mayo 2026",
+        date: "Enero 2026 - Mayo 2026",
         description: (
             <>
                 Sistema integral *Full-Stack* para el seguimiento y gestión de rehabilitación física (Proyecto de Fin de Grado). 
