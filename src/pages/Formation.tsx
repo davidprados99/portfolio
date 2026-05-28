@@ -109,7 +109,7 @@ export const Formation: React.FC = () => {
             <h2 className="text-2xl md:text-3xl text-phosphor-green font-normal mt-12 mb-8 tracking-wider border-b border-phosphor-green/30 pb-4 flex items-center gap-4">
                 &gt; Módulos_Lingüísticos
                 <span className="text-sm border border-phosphor-green/50 px-2 py-1 bg-phosphor-green/10 hidden sm:inline-block animate-pulse">
-                    [ {languagesData.length} ACTIVOS ]
+                    [ {languagesData.length} IDIOMAS ]
                 </span>
             </h2>
 
