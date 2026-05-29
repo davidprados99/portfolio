@@ -1,5 +1,3 @@
-import { Projects } from "../pages/Projects";
-
 export const translations = {
     ES: {
         navbar: {
