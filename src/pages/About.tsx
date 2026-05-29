@@ -1,14 +1,18 @@
 import React from 'react';
 import fotoMia from '../assets/FotoMia.png'; 
+import {translations} from '../locales/translations';
+import { useLanguage } from '../context/LanguageContext';
 
 export const About: React.FC = () => {
+    const { lang } = useLanguage();
+    const t = translations[lang].about;
     return (
         <div className="w-full animate-fade-in font-mono">
             {/* Title section */}
             <h1 className="text-3xl md:text-5xl text-phosphor-green font-normal mb-10 tracking-wider border-b border-phosphor-green/30 pb-4 flex items-center gap-4">
-                &gt; Sobre_mí
+                {t.title}
                 <span className="text-sm border border-phosphor-green/50 px-2 py-1 bg-phosphor-green/10 hidden sm:inline-block animate-pulse">
-                    [ ¡BIENVENIDO A MI PORTFOLIO! ]
+                    [ {t.subtitle} ]
                 </span>
             </h1>
 
@@ -18,17 +22,17 @@ export const About: React.FC = () => {
                 {/* Text block */}
                 <div className="flex-1 space-y-6">
                     <p className="text-lg md:text-xl text-zinc-300 leading-relaxed font-light">
-                        Soy David, Técnico Superior en Desarrollo de Aplicaciones Multiplataforma por la <a href="https://www.uax.es" target="_blank" rel="noopener noreferrer" className="text-phosphor-green hover:underline">Universidad Alfonso X El Sabio</a>, apasionado por la tecnología y el desarrollo de software. Actualmente trabajo como [ RPA Developer ] en <a href="https://www.ust.com" target="_blank" rel="noopener noreferrer" className="text-phosphor-green hover:underline">UST Spain & LATAM</a>, donde realizo automatizaciones de procesos a través de <span className="border-b border-dashed border-phosphor-green/70 pb-0.5">Python y AutoHotkey v1.</span>
+                        {t.p1_1}<a href="https://www.uax.es" target="_blank" rel="noopener noreferrer" className="text-phosphor-green hover:underline">{t.p1_uax}</a>{t.p1_2} <a href="https://www.ust.com" target="_blank" rel="noopener noreferrer" className="text-phosphor-green hover:underline">{t.p1_ust}</a>{t.p1_3} <span className="border-b border-dashed border-phosphor-green/70 pb-0.5">{t.p1_tech}</span>
                     </p> 
                     <p className="text-lg md:text-xl text-zinc-300 leading-relaxed font-light">
-                        Además, soy estudiante de Ingeniería Informática en la <a href="https://www.uoc.edu" target="_blank" rel="noopener noreferrer" className="text-phosphor-green hover:underline">Universitat Oberta de Catalunya</a>, donde estoy ampliando mis conocimientos en áreas como la inteligencia artificial, el desarrollo de software y la programación de sistemas.
+                        {t.p2_1}<a href="https://www.uoc.edu" target="_blank" rel="noopener noreferrer" className="text-phosphor-green hover:underline">{t.p2_uoc}</a>{t.p2_2}
                     </p>
                     
                     <p className="text-lg md:text-xl text-zinc-300 leading-relaxed font-light">
-                        Me considero una persona curiosa, autodidacta y con una gran pasión por aprender y mejorar constantemente. Me encanta enfrentarme a nuevos desafíos y encontrar soluciones creativas a los problemas. En mi tiempo libre, disfruto explorando nuevas tecnologías y desarrollando proyectos personales. Mi objetivo es seguir creciendo como profesional y contribuir al mundo del software con proyectos innovadores y de calidad.
+                        {t.p3}
                     </p>
                     <p className="text-lg md:text-xl text-zinc-300 leading-relaxed font-light">
-                        Por otro lado, soy Graduado en [ Fisioterapia ] por la <a href="https://www.ucm.es" target="_blank" rel="noopener noreferrer" className="text-phosphor-green hover:underline">Universidad Complutense de Madrid</a>, lo que me ha permitido desarrollar habilidades de comunicación, empatía, trabajo en equipo y resolución de problemas, que aplico en mi carrera como programador. Esta combinación de conocimientos en fisioterapia e informática me ha dado una perspectiva única y me permite abordar los desafíos del desarrollo de software desde un enfoque multidisciplinar.
+                        {t.p4_1}<a href="https://www.ucm.es" target="_blank" rel="noopener noreferrer" className="text-phosphor-green hover:underline">{t.p4_ucm}</a>{t.p4_2}
                     </p>
                 </div>
 

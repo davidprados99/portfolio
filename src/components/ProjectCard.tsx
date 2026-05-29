@@ -1,4 +1,6 @@
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../locales/translations';
 
 export interface ProjectCardProps {
     title: string;
@@ -21,6 +23,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     demoUrl,
     status = "COMPLETADO"
 }) => {
+    const { lang } = useLanguage();
+    const t = translations[lang].projects;
+
     return (
         <div className="group relative flex flex-col md:flex-row gap-6 border border-phosphor-green/30 p-6 bg-black hover:border-phosphor-green transition-colors duration-300">
             
@@ -53,7 +58,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                 {/* Technologies */}
                 <div className="mb-6">
                     <h3 className="text-xs uppercase tracking-widest text-zinc-500 mb-2 font-bold">
-                        [ STACK_TECNOLÓGICO ]
+                        {t.stack_title}
                     </h3>
                     <div className="flex flex-wrap gap-2">
                         {technologies.map((tech, index) => (

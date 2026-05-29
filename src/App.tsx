@@ -7,6 +7,7 @@ import { Experience } from './pages/Experience';
 import { Formation } from './pages/Formation';
 import { Projects } from './pages/Projects';
 import { Contact } from './pages/Contact';
+import { LanguageProvider } from './context/LanguageContext'; 
 
 
 const AppLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -30,18 +31,20 @@ const AppLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
 function App() {
   return (
-    <Router>
-      <AppLayout>
-        <Routes>
-          <Route path="/" element={<Welcome />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/formation" element={<Formation />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </AppLayout>
-    </Router>
+    <LanguageProvider>
+      <Router>
+        <AppLayout>
+          <Routes>
+            <Route path="/" element={<Welcome />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/formation" element={<Formation />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </AppLayout>
+      </Router>
+    </LanguageProvider>
   );
 }
 
