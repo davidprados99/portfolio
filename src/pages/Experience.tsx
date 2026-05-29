@@ -4,76 +4,70 @@ import UstLogo from '../assets/ust_logo.jpg';
 import QuironLogo from '../assets/quiron_logo.png';
 import EmeraLogo from '../assets/emera_logo.png';
 import FisiomaxLogo from '../assets/fisiomax_logo.png';
+import { translations } from '../locales/translations';
+import { useLanguage } from '../context/LanguageContext';
 
-const experiences = [
+
+
+export const Experience: React.FC = () => {
+    const { lang } = useLanguage();
+    const t = translations[lang].experience;
+
+
+
+    const experiences = [
     {
         id: 1,
-        title: "RPA Developer",
-        company: "UST Spain & LATAM",
-        date: "Octubre 2025 - Presente",
-        description: (
-            <>
-                Desarrollo y mantenimiento de automatizaciones de procesos mediante <span className="border-b border-dashed border-phosphor-green/70 pb-0.5">Python</span> y <span className="border-b border-dashed border-phosphor-green/70 pb-0.5">AutoHotkey v1</span> en entorno bancario.
-                Encargado de optimizar flujos de trabajo, reducir tiempos de ejecución y minimizar errores manuales en operativas del sistema.
-            </>
-        ),
+        title: t.e1_Title,
+        company: t.e1_Company,
+        date: t.e1_Month,
+        description: t.e1_Desc,
         imageSrc: UstLogo,
         link: 'https://www.ust.com/es',
-        hardSkills: ['Python', 'AutoHotkey v1','Selenium', 'Automatización de Procesos', 'JSON', 'XPath', 'Git / Bitbucket', 'Google Workspace APIs'],
-        softSkills: ['Resolución de Problemas', 'Trabajo en Equipo', 'Comunicación Efectiva', 'Gestión del Tiempo', 'Pensamiento crítico', 'Responsabilidad']
+        hardSkills: t.e1_HardSkills,
+        softSkills: t.e1_SoftSkills
     },
     {
         id: 2,
-        title: "Fisioterapeuta autónomo",
-        company: "Quirón Prevención",
-        date: "Marzo 2024 - Octubre 2025",
-        description: 
-            <>
-                Tratamientos privados de fisioterapia para trabajadores de DHL, enfocados en la prevención y el tratamiento de lesiones laborales, en colaboración con Quirón Prevención.
-            </>,
+        title: t.e2_Title,
+        company: t.e2_Company,
+        date: t.e2_Month,
+        description: t.e2_Desc,
         imageSrc: QuironLogo,
         link: 'https://www.quironprevencion.com/es',
-        hardSkills: ['Terapia Manual', 'Ejercicio Terapéutico', 'Rehabilitación de Lesiones', 'Prevención de Lesiones Laborales'],
-        softSkills: ['Empatía', 'Comunicación', 'Gestión del Tiempo', 'Adaptabilidad', 'Resolución de Problemas', 'Actitud Positiva']
+        hardSkills: t.e2_HardSkills,
+        softSkills: t.e2_SoftSkills
     },
     {
         id: 3,
-        title: "Fisioterapeuta geriátrico",
-        company: "Emera España",
-        date: "Enero 2023 - Marzo 2024",
-        description: 
-            <>
-                Procesos de fisioterapia geriátrica para ancianos en residencias de mayores, con el objetivo de mejorar su calidad de vida, movilidad y bienestar general, trabajando en estrecha colaboración con equipos multidisciplinares.
-            </>,
+        title: t.e3_Title,
+        company: t.e3_Company,
+        date: t.e3_Month,
+        description: t.e3_Desc,
         imageSrc: EmeraLogo,
         link: 'https://emera-group.es/',
-        hardSkills: ['Fisioterapia Neurológica y Geriátrica', 'Ejercicio Terapéutico', 'Rehabilitación de Lesiones', 'Prevención de Caídas en Personas Mayores'],
-        softSkills: ['Trabajo en Equipo', 'Comunicación', 'Empatía', 'Paciencia', 'Asistencia sanitaria', 'Responsabilidad']
+        hardSkills: t.e3_HardSkills,
+        softSkills: t.e3_SoftSkills
     },
     {
         id: 4,
-        title: "Fisioterapeuta clínico",
-        company: "Clínica Fisiomax Parla",
-        date: "Octubre 2021 - Diciembre 2022",
-        description: 
-            <>
-                Atención integral a pacientes en diversas patologías, con énfasis en la rehabilitación física y el alivio del dolor.
-            </>,
+        title: t.e4_Title,
+        company: t.e4_Company,
+        date: t.e4_Month,
+        description: t.e4_Desc,
         imageSrc: FisiomaxLogo,
         link: 'https://www.fisioterapiaparlafisiomax.com/',
-        hardSkills: ['Ejercicio Terapéutico', 'Terapia Manual', 'Rehabilitación de Lesiones', 'Diagnóstico Físico', 'Planificación de Tratamiento'],
-        softSkills: ['Empatía', 'Comunicación', 'Paciencia', 'Responsabilidad', 'Trabajo en Equipo', 'Resolución de Problemas']
+        hardSkills: t.e4_HardSkills,
+        softSkills: t.e4_SoftSkills
     }
 ];
-
-export const Experience: React.FC = () => {
     return (
         <div className="w-full animate-fade-in font-mono">
             {/* Header */}
             <h1 className="text-3xl md:text-5xl text-phosphor-green font-normal mb-10 tracking-wider border-b border-phosphor-green/30 pb-4 flex items-center gap-4">
-                &gt; Mi_Experiencia
+                {t.title}
                 <span className="text-sm border border-phosphor-green/50 px-2 py-1 bg-phosphor-green/10 hidden sm:inline-block animate-pulse">
-                    [ {experiences.length} EXPERIENCIAS ACUMULADAS ]
+                    [ {experiences.length} {t.subtitle} ]
                 </span>
             </h1>
 

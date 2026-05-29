@@ -1,4 +1,6 @@
 import React from 'react';
+import {useLanguage } from '../context/LanguageContext';
+import { translations } from '../locales/translations';
 
 // Props for the ExperienceCard component
 export interface ExperienceCardProps {
@@ -22,6 +24,10 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
     hardSkills,
     softSkills
 }) => {
+
+    const { lang } = useLanguage();
+    const t = translations[lang].experience;
+
     return (
         <div className="group relative flex flex-col md:flex-row gap-6 border border-phosphor-green/30 p-6 bg-black hover:border-phosphor-green transition-colors duration-300">
 
@@ -54,7 +60,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
                         {hardSkills && hardSkills.length > 0 && (
                             <div>
                                 <h3 className="text-xs uppercase tracking-widest text-zinc-500 mb-2 font-bold">
-                                    [ HABILIDADES_TÉCNICAS ]
+                                    {t.hard_skills_title}
                                 </h3>
                                 <div className="flex flex-wrap gap-2">
                                     {hardSkills.map((skill, index) => (
@@ -73,7 +79,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
                         {softSkills && softSkills.length > 0 && (
                             <div>
                                 <h3 className="text-xs uppercase tracking-widest text-zinc-500 mb-2 font-bold">
-                                    [ COMPETENCIAS_CLAVE ]
+                                    {t.soft_skills_title}
                                 </h3>
                                 <div className="flex flex-wrap gap-2">
                                     {softSkills.map((skill, index) => (

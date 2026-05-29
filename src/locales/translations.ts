@@ -58,7 +58,45 @@ export const translations = {
             p4_Month:" Enero 2025 - Junio 2025",
             p4_Desc: "Este proyecto tiene como objetivo realizar un análisis completo sobre lesiones de futbolistas profesionales entre los años 2019 y 2023 de la Premier League utilizando tecnologías de Big Data en AWS y visualización con Power BI."
         },
-        experience: {}
+        experience: {
+            title: "> Mi_Experiencia",
+            subtitle: "EXPERIENCIAS_ACUMULADAS",
+            hard_skills_title: "[ HABILIDADES_TÉCNICAS ]",
+            soft_skills_title: "[ COMPETENCIAS_CLAVE ]",
+
+            // Experience 1
+            e1_Title: "RPA Developer",
+            e1_Company: "UST Spain & LATAM",
+            e1_Month: "Octubre 2025 - Actualidad",
+            e1_Desc: "Desarrollo y mantenimiento de automatizaciones de procesos mediante Python y AutoHotkey v1 en entorno bancario. Encargado de optimizar flujos de trabajo, reducir tiempos de ejecución y minimizar errores manuales en operativas del sistema.",
+            e1_HardSkills: ['Python', 'AutoHotkey v1','Selenium', 'Automatización de Procesos', 'JSON', 'XPath', 'Git / Bitbucket', 'Google Workspace APIs'], 
+            e1_SoftSkills: ['Resolución de Problemas', 'Trabajo en Equipo', 'Comunicación Efectiva', 'Gestión del Tiempo', 'Pensamiento crítico', 'Responsabilidad'],
+
+            // Experience 2
+            e2_Title: "Fisioterapeuta autónomo",
+            e2_Company: "Quirón Prevención",
+            e2_Month: "Marzo 2024 - Octubre 2025",
+            e2_Desc: "Tratamientos privados de fisioterapia para trabajadores de DHL, enfocados en la prevención y el tratamiento de lesiones laborales, en colaboración con Quirón Prevención.",
+            e2_HardSkills: ['Terapia Manual', 'Ejercicio Terapéutico', 'Rehabilitación de Lesiones', 'Prevención de Lesiones Laborales'], 
+            e2_SoftSkills: ['Empatía', 'Comunicación', 'Gestión del Tiempo', 'Adaptabilidad', 'Resolución de Problemas', 'Actitud Positiva'],
+            
+            // Experience 3
+            e3_Title: "Fisioterapeuta geriátrico",
+            e3_Company: "Emera España",
+            e3_Month: "Enero 2023 - Marzo 2024",
+            e3_Desc: "Procesos de fisioterapia geriátrica para ancianos en residencias de mayores, con el objetivo de mejorar su calidad de vida, movilidad y bienestar general, trabajando en estrecha colaboración con equipos multidisciplinares.",
+            e3_HardSkills: ['Fisioterapia Neurológica y Geriátrica', 'Ejercicio Terapéutico', 'Rehabilitación de Lesiones', 'Prevención de Caídas en Personas Mayores'], 
+            e3_SoftSkills: ['Trabajo en Equipo', 'Comunicación', 'Empatía', 'Paciencia', 'Asistencia sanitaria', 'Responsabilidad'],
+
+            // Experience 4
+            e4_Title: "Fisioterapeuta clínico",
+            e4_Company: "Clínica Fisiomax Parla",
+            e4_Month: "Octubre 2021 - Diciembre 2022",
+            e4_Desc: "Atención integral a pacientes en diversas patologías, con énfasis en la rehabilitación física y el alivio del dolor.",
+            e4_HardSkills: ['Ejercicio Terapéutico', 'Terapia Manual', 'Rehabilitación de Lesiones', 'Diagnóstico Físico', 'Planificación de Tratamiento'],
+            e4_SoftSkills: ['Empatía', 'Comunicación', 'Paciencia', 'Responsabilidad', 'Trabajo en Equipo', 'Resolución de Problemas']
+
+        }
     },
     EN: {
         navbar: {
@@ -118,6 +156,45 @@ export const translations = {
             p4_Title: "Big Data Project",
             p4_Month:" January 2025 - June 2025",
             p4_Desc: "This project aims to conduct a comprehensive analysis of injuries among professional footballers between the years 2019 and 2023 in the Premier League using Big Data technologies in AWS and visualization with Power BI."
+        },
+        experience: {
+            title: "> My_Experience",
+            subtitle: "ACCUMULATED_EXPERIENCES",
+            hard_skills_title: "[ TECHNICAL_SKILLS ]",
+            soft_skills_title: "[ KEY_SKILLS ]",
+
+            // Experience 1
+            e1_Title: "RPA Developer",
+            e1_Company: "UST Spain & LATAM",
+            e1_Month: "October 2025 - Present",
+            e1_Desc: "Development and maintenance of process automation using Python and AutoHotkey v1 in a banking environment. Responsible for optimising workflows, reducing execution times and minimising manual errors in system operations.",
+            e1_HardSkills: ['Python', 'AutoHotkey v1','Selenium', 'Process Automation', 'JSON', 'XPath', 'Git / Bitbucket', 'Google Workspace APIs'], 
+            e1_SoftSkills: ['Problem Solving', 'Teamwork', 'Effective Communication', 'Time Management', 'Critical Thinking', 'Responsibility'],
+
+            // Experience 2
+            e2_Title: "Freelance Physical Therapist",
+            e2_Company: "Quirón Prevención",
+            e2_Month: "March 2024 - October 2025",
+            e2_Desc: "Private physical therapy treatments for DHL employees, focusing on injury prevention and treatment of work-related injuries, in partnership with Quirón Prevención.",
+            e2_HardSkills: ['Manual Therapy', 'Therapeutic Exercise', 'Injury Rehabilitation', 'Prevention of work-related injuries'], 
+            e2_SoftSkills: ['Empathy', 'Communication', 'Time Management', 'Adaptability', 'Problem Solving', 'Positive Attitude'],
+            
+            // Experience 3
+            e3_Title: "Geriatric Physical Therapist",
+            e3_Company: "Emera España",
+            e3_Month: "January 2023 - March 2024",
+            e3_Desc: "Geriatric physiotherapy programmes for elderly residents in care homes, aimed at improving their quality of life, mobility and general well-being, working in close collaboration with multidisciplinary teams.",
+            e3_HardSkills: ['Neurological and geriatric physiotherapy', 'Therapeutic Exercise', 'Injury Rehabilitation', 'Fall prevention in older people'], 
+            e3_SoftSkills: ['Teamwork', 'Communication', 'Empathy', 'Patience', 'Healthcare', 'Responsability'],
+
+            // Experience 4
+            e4_Title: "Clinical Physical Therapist",
+            e4_Company: "Clínica Fisiomax Parla",
+            e4_Month: "October 2021 - December 2022",
+            e4_Desc: "Comprehensive care for patients with a range of conditions, with a focus on physical rehabilitation and pain relief.",
+            e4_HardSkills: ['Therapeutic Exercise', 'Manual Therapy', 'Injury Rehabilitation', 'Physical Diagnosis', 'Treatment planification'],
+            e4_SoftSkills: ['Empathy', 'Communication', 'Patience', 'Responsability', 'Teamwork', 'Problem Solving']
+
         }
     },
     FR: {
@@ -178,6 +255,45 @@ export const translations = {
             p4_Title: "Projet Big Data",
             p4_Month:" Janvier 2025 - Juin 2025",
             p4_Desc: "Ce projet a pour objectif de réaliser une analyse complète des blessures subies par les footballeurs professionnels de la Premier League entre 2019 et 2023, en utilisant les technologies Big Data sur AWS et la visualisation avec Power BI."
+        },
+        experience: {
+            title: "> Mon_Expérience",
+            subtitle: "EXPÉRIENCES_ACCUMULÉES",
+            hard_skills_title: "[ COMPÉTENCES_TECHNIQUES ]",
+            soft_skills_title: "[ COMPÉTENCES_CLÉS ]",
+
+            // Experience 1
+            e1_Title: "Développeur RPA",
+            e1_Company: "UST Spain & LATAM",
+            e1_Month: "Octobre 2025 - Actualidad",
+            e1_Desc: "Développement et maintenance des automatisations de processus à l'aide de Python et AutoHotkey v1 dans un environnement bancaire. Chargé d'optimiser les flux de travail, de réduire les temps d'exécution et de minimiser les erreurs manuelles dans les opérations du système.",
+            e1_HardSkills: ['Python', 'AutoHotkey v1','Selenium', 'Automatisation des Processus', 'JSON', 'XPath', 'Git / Bitbucket', 'Google Workspace APIs'], 
+            e1_SoftSkills: ['Résolution de Problèmes', 'Travail en Équipe', 'Communication éffective', 'Gestion du Temps', 'Esprit Critique', 'Responsabilité'],
+
+            // Experience 2
+            e2_Title: "Kinésithérapeute indépendant",
+            e2_Company: "Quirón Prevención",
+            e2_Month: "Mars 2024 - Octobre 2025",
+            e2_Desc: "Soins de kinésithérapie privés destinés aux employés de DHL, axés sur la prévention et le traitement des accidents du travail, en collaboration avec Quirón Prevención.",
+            e2_HardSkills: ['Thérapie manuelle', 'Exercice thérapeutique', 'Réhabilitation après une blessure', 'Prévention des blessures liées au travail'], 
+            e2_SoftSkills: ['Empathie', 'Communication', 'Gestion du Temps', 'Adaptabilité', 'Résolution de Problèmes', 'Attitude Positive'],
+            
+            // Experience 3
+            e3_Title: "Kinésithérapeute gériatrique",
+            e3_Company: "Emera España",
+            e3_Month: "Janvier 2023 - Mars 2024",
+            e3_Desc: "Pratiques de kinésithérapie gériatrique destinées aux personnes âgées en maison de retraite, visant à améliorer leur qualité de vie, leur mobilité et leur bien-être général, en étroite collaboration avec des équipes pluridisciplinaires.",
+            e3_HardSkills: ['Kinésithérapie neurologique et gériatrique', 'Exercice thérapeutique', 'Rehabilitación de Lesiones', 'Prévention des chutes chez les personnes âgées'], 
+            e3_SoftSkills: ['Travail en Équipe', 'Communication', 'Empathie', 'Patience', 'Soins de santé', 'Responsabilité'],
+
+            // Experience 4
+            e4_Title: "Kinésithérapeute clinique",
+            e4_Company: "Clínica Fisiomax Parla",
+            e4_Month: "Octobre 2021 - Décembre 2022",
+            e4_Desc: "Prise en charge globale des patients atteints de diverses pathologies, en mettant l'accent sur la rééducation physique et le soulagement de la douleur",
+            e4_HardSkills: ['Exercice thérapeutique', 'Thérapie manuelle', 'Réhabilitation après une blessure', 'Diagnostic physique', 'Planification du traitement'],
+            e4_SoftSkills: ['Empathie', 'Communication', 'Patience', 'Responsabilité', 'Responsabilité', 'Résolution de Problèmes']
+
         }
     }
 };
